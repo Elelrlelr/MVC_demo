@@ -1,0 +1,18 @@
+
+@{
+    ViewData["Title"] = "Wel";
+}
+
+
+
+<h2>Index</h2>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["NumTimes"]!; i++)
+    {
+        <li>@ViewData["Message"]</li>
+    }
+</ul>
+
+
+<p>This is my Wel pages</p>
