@@ -88,7 +88,7 @@ namespace MVCdemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Author,Genre,Price,ReleaseDate")] Book book)
+        public async Task<IActionResult> Create([Bind("Id,Title,Author,Genre,Price,ReleaseDate,Rating")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -120,7 +120,7 @@ namespace MVCdemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,Genre,Price,ReleaseDate")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,Genre,Price,ReleaseDate,Rating")] Book book)
         {
             if (id != book.Id)
             {

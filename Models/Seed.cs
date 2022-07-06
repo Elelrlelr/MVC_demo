@@ -21,7 +21,8 @@ public class Seed
                     Author = "Linus Torvald",
                     Price = 19.99m,
                     Genre = "Programming",
-                    ReleaseDate = new DateTime(2016, 4, 1)
+                    ReleaseDate = new DateTime(2016, 4, 1),
+                    Rating = "R"
 
                 },
                 new Book
@@ -29,8 +30,9 @@ public class Seed
                     Title = "The Java Book",
                     Author = "Jane Doe",
                     Price = 29.99m,
-                    Genre = "Programming",
-                    ReleaseDate = new DateTime(2003, 2, 12)
+                    Genre = "Programming",                   
+                    ReleaseDate = new DateTime(2003, 2, 12),
+                    Rating = "G"
                 },
                 new Book
                 {
@@ -38,7 +40,8 @@ public class Seed
                     Author = "John Doe",
                     Price = 39.99m,
                     Genre = "Programming",
-                    ReleaseDate = new DateTime(1998, 12, 25)
+                    ReleaseDate = new DateTime(1998, 12, 25),
+                    Rating = "S"
                 },
                 new Book
                 {
@@ -46,7 +49,8 @@ public class Seed
                     Author = "Jane Smith",
                     Price = 49.99m,
                     Genre = "Programming",
-                    ReleaseDate = new DateTime(1999, 10, 30)
+                    ReleaseDate = new DateTime(1999, 10, 30),
+                    Rating = "B"
                 },
                 new Book
                 {
@@ -54,7 +58,8 @@ public class Seed
                     Author = "Bjarne Stroustrup",
                     Price = 59.99m,
                     Genre = "Programming",
-                    ReleaseDate = new DateTime(2008, 8, 13)
+                    ReleaseDate = new DateTime(2008, 8, 13),
+                    Rating = "Entry"
                 },
                 new Book
                 {
@@ -62,7 +67,8 @@ public class Seed
                     Author = "Jeff T. Fritz",
                     Price = 69.99m,
                     Genre = "Programming",
-                    ReleaseDate = new DateTime(2011, 12, 3)
+                    ReleaseDate = new DateTime(2011, 12, 3),
+                    Rating = "What-Ever"
                 }
                             );
             context.SaveChanges();
