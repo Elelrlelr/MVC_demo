@@ -56,7 +56,7 @@ namespace MVCdemo.Controllers
                 Books = await books.ToListAsync()
             };
 
-                return View(bookGenreVM);
+                return View("./Index",bookGenreVM);
         }
 
         // GET: Book/Details/5
@@ -74,7 +74,7 @@ namespace MVCdemo.Controllers
                 return NotFound();
             }
 
-            return View(book);
+            return View("Views/Book/Details.cshtml",book);
         }
 
         // GET: Book/Create
