@@ -1,4 +1,4 @@
-# MVC_demo
+# Basic MVC demo sample
 
 
-just demo
+Simple webapp using MVC pattern for recording Book shop collected
